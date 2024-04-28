@@ -3,7 +3,7 @@ import { Editor } from '@tinymce/tinymce-react'
 import { Controller} from 'react-hook-form'
 
 
-
+// 6saqufkejg482igum458tafs5pksflsi36oau6m2s5vhzb6o
 //this is a real time editor(RTE)
 export default function RTE({name, control, label, defaultValue = ""}) {
     return (
@@ -16,7 +16,7 @@ export default function RTE({name, control, label, defaultValue = ""}) {
             control = {control}
             render = {({field: {onChange}}) => (
                 <Editor 
-                apiKey='6saqufkejg482igum458tafs5pksflsi36oau6m2s5vhzb6o'
+                apiKey='ncy0b6pfsogba1a6gfvjisw71399lwstjpk75xayc6ui6ake'
                 initialValue={defaultValue}
                 init={
                     {   
