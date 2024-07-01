@@ -21,6 +21,7 @@ function PostForm({post}) {
 
     const navigate = useNavigate()
     const userData = useSelector((state) => state.auth.userData)
+    console.log(userData);
 
     const submit = async (data) => {
         //2 cases 
@@ -53,7 +54,11 @@ function PostForm({post}) {
                 const dbPost = appwriteService.createPost({
                     ...data,
                     userId: userData.$id,
+                    
                 })
+                
+                
+                console.log(dbPost.$id);
                 //ydi post create ho gyi to user ko redirect kar do 
                 if(dbPost){
                     navigate(`post/${dbPost.$id}`)

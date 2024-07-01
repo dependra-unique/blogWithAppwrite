@@ -18,6 +18,7 @@ export class Service {
     async createPost({title, slug, content, featuredImage, status, userId}){
         try {   
             console.log("create post");
+            console.log(status);
 
             // slug ko as a ID.unique() ki tarah hi use kar rhe hai
             return await this.databases.createDocument( 
@@ -29,7 +30,7 @@ export class Service {
                     content,
                     featuredImage,
                     status,
-                    userId,
+                    userId
                 }
             )
             
